@@ -14,6 +14,7 @@
 		EF5D937729D09919002D89D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5D937629D09919002D89D6 /* Assets.xcassets */; };
 		EF5D937A29D09919002D89D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5D937829D09919002D89D6 /* LaunchScreen.storyboard */; };
 		EF5D938529D0D370002D89D6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D938429D0D370002D89D6 /* LoginScreen.swift */; };
+		EF87AE032B0A9B37007492BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF87AE022B0A9B37007492BC /* GoogleService-Info.plist */; };
 		EFBA106929E4F8E8000AD9DB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBA106829E4F8E8000AD9DB /* RegisterViewController.swift */; };
 		EFBA106B29E4FD96000AD9DB /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBA106A29E4FD96000AD9DB /* RegisterScreen.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		EF5D937929D09919002D89D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5D937B29D09919002D89D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5D938429D0D370002D89D6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		EF87AE022B0A9B37007492BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFBA106829E4F8E8000AD9DB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EFBA106A29E4FD96000AD9DB /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		F6A0B417452C2C42D2BF2D25 /* Pods-LoginViewCode-Curso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode-Curso.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode-Curso/Pods-LoginViewCode-Curso.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,7 +54,6 @@
 				F6A0B417452C2C42D2BF2D25 /* Pods-LoginViewCode-Curso.debug.xcconfig */,
 				188C775C3972C342F97A3611 /* Pods-LoginViewCode-Curso.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +93,7 @@
 				EF5D937629D09919002D89D6 /* Assets.xcassets */,
 				EF5D937829D09919002D89D6 /* LaunchScreen.storyboard */,
 				EF5D937B29D09919002D89D6 /* Info.plist */,
+				EF87AE022B0A9B37007492BC /* GoogleService-Info.plist */,
 			);
 			path = "LoginViewCode-Curso";
 			sourceTree = "<group>";
@@ -208,6 +210,7 @@
 			files = (
 				EF5D937A29D09919002D89D6 /* LaunchScreen.storyboard in Resources */,
 				EF5D937729D09919002D89D6 /* Assets.xcassets in Resources */,
+				EF87AE032B0A9B37007492BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
