@@ -14,6 +14,7 @@
 		EF5D937729D09919002D89D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5D937629D09919002D89D6 /* Assets.xcassets */; };
 		EF5D937A29D09919002D89D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5D937829D09919002D89D6 /* LaunchScreen.storyboard */; };
 		EF5D938529D0D370002D89D6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D938429D0D370002D89D6 /* LoginScreen.swift */; };
+		EF6AF3272B1978E700CE8135 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AF3262B1978E700CE8135 /* Alert.swift */; };
 		EF87AE032B0A9B37007492BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF87AE022B0A9B37007492BC /* GoogleService-Info.plist */; };
 		EFBA106929E4F8E8000AD9DB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBA106829E4F8E8000AD9DB /* RegisterViewController.swift */; };
 		EFBA106B29E4FD96000AD9DB /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBA106A29E4FD96000AD9DB /* RegisterScreen.swift */; };
@@ -30,6 +31,7 @@
 		EF5D937929D09919002D89D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5D937B29D09919002D89D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5D938429D0D370002D89D6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		EF6AF3262B1978E700CE8135 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		EF87AE022B0A9B37007492BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFBA106829E4F8E8000AD9DB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EFBA106A29E4FD96000AD9DB /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		EF5D936C29D09918002D89D6 /* LoginViewCode-Curso */ = {
 			isa = PBXGroup;
 			children = (
+				EF6AF3252B19787900CE8135 /* Alert */,
 				EFBA106329E4F868000AD9DB /* Register */,
 				EF5D938129D0D317002D89D6 /* Login */,
 				EF5D936D29D09918002D89D6 /* AppDelegate.swift */,
@@ -121,6 +124,14 @@
 				EF5D938429D0D370002D89D6 /* LoginScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		EF6AF3252B19787900CE8135 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EF6AF3262B1978E700CE8135 /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		EFBA106329E4F868000AD9DB /* Register */ = {
@@ -269,6 +280,7 @@
 				EF5D938529D0D370002D89D6 /* LoginScreen.swift in Sources */,
 				EF5D936E29D09918002D89D6 /* AppDelegate.swift in Sources */,
 				EF5D937029D09918002D89D6 /* SceneDelegate.swift in Sources */,
+				EF6AF3272B1978E700CE8135 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

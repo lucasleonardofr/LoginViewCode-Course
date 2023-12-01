@@ -10,8 +10,9 @@ import Firebase
 
 class LoginViewController: UIViewController {
     
-    var auth:Auth?
+    var auth: Auth?
     var loginScreen: LoginScreen?
+    var alert: Alert?
     
     override func loadView() {
         self.loginScreen = LoginScreen()
@@ -23,13 +24,14 @@ class LoginViewController: UIViewController {
         self.loginScreen?.delegate = self
         self.loginScreen?.configTextFieldDelegate(delegate: self)
         self.auth = Auth.auth()
+        self.alert = Alert(controller: self)
     }
     
-
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
+    
 }
 
 extension LoginViewController: LoginScreenProtocol {
@@ -39,13 +41,12 @@ extension LoginViewController: LoginScreenProtocol {
         
         self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
             if error !=  nil {
-                print("Atençao dados incorretos, verifique e tente novamente!")
+                self.alert?.getAlert(titulo: "Atenção", mensagem: "Dados incorretos, verifique e tente novamente!")
             }else{
-                
                 if usuario == nil {
-                    print("Tivemos um problema inesperado, tente novamente mais tarde")
+                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema inesperado, tente novamente mais tarde")
                 }else {
-                    print("Parabens, usuario logado com sucesso :D !")
+                    self.alert?.getAlert(titulo: "Parabéns", mensagem: "Usuario logado com sucesso :D !")
                 }
             }
         })
@@ -55,8 +56,6 @@ extension LoginViewController: LoginScreenProtocol {
         let viewController: RegisterViewController =  RegisterViewController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
-
 }
 
 extension LoginViewController: UITextFieldDelegate {
